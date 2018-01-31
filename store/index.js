@@ -1,0 +1,23 @@
+import VuexPersist from '~/assets/js/vuexPersist'
+
+const persist = new VuexPersist({
+	path: './',
+	reducer: (state) => {
+		return {
+			selected: state.selected
+		}
+	}
+})
+
+export const plugins = [persist.subscribe()]
+
+export const state = () => ({
+	selected: null,
+	empty: null
+})
+
+export const mutations = {
+	setSelected (state, val) {
+		state.selected = val
+	}
+}
