@@ -1,7 +1,8 @@
 import VuexPersist from '~/assets/js/vuexPersist'
+const app = require('electron').remote.app
 
 const persist = new VuexPersist({
-	path: './',
+	path: app.getPath('userData'),
 	reducer: (state) => {
 		return {
 			selected: state.selected

@@ -55,8 +55,10 @@ const newWin = () => {
     width: config.electron.width || 800,
     height: config.electron.height || 600
   })
-  if (!config.dev) {
-    return win.loadURL(_NUXT_URL_)
+  if (config.dev) {
+    win.webContents.openDevTools()
+  } else {
+	return win.loadURL(_NUXT_URL_)
   }
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
