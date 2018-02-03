@@ -51,10 +51,8 @@ const app = electron.app
 const bw = electron.BrowserWindow
 
 const newWin = () => {
-  win = new bw({
-    width: config.electron.width || 800,
-    height: config.electron.height || 600
-  })
+  win = new bw()
+  win.maximize()
   if (config.dev) {
     win.webContents.openDevTools()
   } else {

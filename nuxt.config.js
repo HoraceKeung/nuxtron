@@ -2,13 +2,6 @@ module.exports = {
 	mode: 'spa',
 	loading: false,
 	/*
-	** Electron Settings
-	*/
-	electron: {
-		width: 1024,
-		height: 768
-	},
-	/*
 	** Build configuration
 	*/
 	build: {
