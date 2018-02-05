@@ -1,5 +1,8 @@
 module.exports = {
 	mode: 'spa',
+	/*
+	** Disable default loading bar
+	*/
 	loading: false,
 	/*
 	** Build configuration

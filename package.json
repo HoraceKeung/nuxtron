@@ -6,7 +6,10 @@
   "private": true,
   "main": "main.js",
   "build": {
-    "appId": "com.nuxt.electron"
+    "appId": "com.nuxt.electron",
+	"directories": {
+	  "buildResources": "assets/icons"
+	}
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development electron .",
@@ -27,6 +30,7 @@
     "babel-eslint": "^8.2.1",
     "electron": "1.8.2-beta.4",
     "electron-builder": "^19.55.3",
+    "electron-devtools-installer": "^2.2.3",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
