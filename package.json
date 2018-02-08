@@ -1,5 +1,5 @@
 {
-  "name": "nuxtron",
+  "name": "Nuxtron",
   "version": "1.0.0",
   "description": "Nuxt + Electron",
   "author": "Horace <horace.keung@incrowdsports.com>",
@@ -7,15 +7,13 @@
   "main": "main.js",
   "build": {
     "appId": "com.nuxt.electron",
-	"directories": {
-	  "buildResources": "assets/icons"
-	}
+    "directories": {
+      "buildResources": "assets/icons"
+    }
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development electron .",
-    "pack": "nuxt build && electron-builder",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "pack": "nuxt build && electron-builder"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
@@ -23,8 +21,7 @@
     "deepmerge": "^2.0.1",
     "jquery": "^3.3.1",
     "nuxt": "^1.2.1",
-    "popper.js": "^1.12.9",
-    "vue-select": "^2.4.0"
+    "popper.js": "^1.12.9"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

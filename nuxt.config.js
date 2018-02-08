@@ -1,6 +1,12 @@
 module.exports = {
 	mode: 'spa',
 	/*
+	** Headers of the page
+	*/
+	head: {
+		title: 'Nuxtron'
+	},
+	/*
 	** Disable default loading bar
 	*/
 	loading: false,
