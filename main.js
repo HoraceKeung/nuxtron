@@ -56,6 +56,7 @@ const newWin = () => {
 	})
 	win.maximize()
 	if (config.dev) {
+		// Install vue dev tool and open chrome dev tools
 		const { default: installExtension, VUEJS_DEVTOOLS } = require('electron-devtools-installer')
 		installExtension(VUEJS_DEVTOOLS).then(name => {
 			console.log(`Added Extension:  ${name}`)

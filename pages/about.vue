@@ -4,6 +4,7 @@
 		<p>We are using Node.js {{nodeVersion}}</p>
 		<p>This template is based on <a href="https://nuxtjs.org/guide/installation" target="_blank">nuxt starter template</a> and <a href="https://github.com/nuxt-community/electron-template" target="_blank">electron template</a>.</p>
 		<p>Vuex persist functionality base on <a href="https://www.npmjs.com/package/vuex-persistfile" target="_blank">vuex-persistfile</a>.</p>
+		<p><a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a> is included.</p>
 	</section>
 </template>
 
