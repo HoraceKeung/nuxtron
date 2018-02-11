@@ -15,6 +15,8 @@ $ npm run dev
 $ npm run pack
 ```
 
-Nodejs version 8.2.1 or above is required
+Nodejs version 8.2.1 or above is required.
+
 [Bootstrap 4](https://getbootstrap.com/) is included.
+
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
