@@ -1,22 +1,36 @@
-# nuxtron
+# Nuxtron
 
-> Nuxt + Electron
+A [Nuxt.js](https://github.com/nuxt/nuxt.js) Electron starter project template.
 
-## Build Setup
+## Prerequisites
+
+Make sure to have `node 8.2.1+` and `npm 5.0+` installed
+
+## Installation
+
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
+$ vue init HoraceKeung/nuxtron my-project  
+$ cd my-project                     
 # install dependencies
-$ yarn
-
-# serve with hot reload
-$ npm run dev
-
-# build a ready for distribution Electron app using electron-builder
-$ npm run pack
+$ npm install # Or yarn
 ```
 
-Nodejs version 8.2.1 or above is required.
+> Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
 
-[Bootstrap 4](https://getbootstrap.com/) is included.
+## Usage
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+### Development
+
+``` bash
+# development with vue devtools
+$ npm run dev
+```
+
+### Production
+
+``` bash
+# build for production
+$ npm run build
+```

@@ -19,6 +19,6 @@ module.exports = {
   // add your custom rules here
   rules: {
 	"indent": ["error", "tab"],
-	"no-tabs": 0
+  	"no-tabs": 0
   }
 }

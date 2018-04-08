@@ -24,3 +24,10 @@ body {
 .secondary {
 	color: var(--secondary);
 }
+.btn-primary {
+	background-color: var(--primary);
+	color: #fff;
+}
+.btn-secondary {
+	background-color: var(--secondary);
+}
