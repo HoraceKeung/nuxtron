@@ -17,7 +17,7 @@ module.exports = {
 			if (isClient) { config.target = 'electron-renderer' }
 		}
 	},
-	dev: process.env.NODE_ENV !== 'production'
+	dev: process.env.NODE_ENV !== 'production',
 	css: [
 		'@/assets/css/global.css'
 	]

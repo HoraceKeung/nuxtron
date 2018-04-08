@@ -4,7 +4,7 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) Electron starter project template.
 
 ## Prerequisites
 
-Make sure to have `node 8.2.1+` and `npm 5.0+` installed
+Make sure to have `node 8.9.3+` and `npm 5.0+` installed
 
 ## Installation
 

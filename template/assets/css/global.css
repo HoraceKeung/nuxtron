@@ -30,4 +30,5 @@ body {
 }
 .btn-secondary {
 	background-color: var(--secondary);
+	color: #000;
 }
