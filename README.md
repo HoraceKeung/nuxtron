@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/HoraceKeung/nuxtron/master/template/static/icon.png">
+    <img width="128" src="https://raw.githubusercontent.com/HoraceKeung/nuxtron/master/template/static/icon.png">
 </p>
 
 # Nuxtron
