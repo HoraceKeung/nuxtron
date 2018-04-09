@@ -35,6 +35,6 @@ $ npm run dev
 ### Production
 
 ``` bash
-# build for production
+# build for production using electron-builder
 $ npm run build
 ```
