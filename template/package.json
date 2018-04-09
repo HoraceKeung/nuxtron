@@ -12,8 +12,8 @@
     }
   },
   "scripts": {
-    "dev": "electron .",
-    "build": "cross-env NODE_ENV=production nuxt build && electron-builder"
+    "dev": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder"
   },
   "dependencies": {
     "nuxt": "^1.4.0"

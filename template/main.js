@@ -4,6 +4,7 @@
 const http = require('http')
 const { Nuxt, Builder } = require('nuxt')
 let config = require('./nuxt.config.js')
+config.rootDir = __dirname // for electron-builder
 // Init Nuxt.js
 const nuxt = new Nuxt(config)
 const builder = new Builder(nuxt)
@@ -23,9 +24,9 @@ console.log(`Nuxt working on ${_NUXT_URL_}`)
 /*
 ** Electron
 */
+let win = null // Current window
 const electron = require('electron')
 const path = require('path')
-let win = null // Current window
 const app = electron.app
 const newWin = () => {
 	win = new electron.BrowserWindow({
@@ -40,14 +41,14 @@ const newWin = () => {
 			console.log(`Added Extension:  ${name}`)
 			win.webContents.openDevTools()
 		}).catch(err => console.log('An error occurred: ', err))
-		// Poll server
+		// Wait for nuxt to build
 		const pollServer = () => {
 			http.get(_NUXT_URL_, (res) => {
 				if (res.statusCode === 200) { win.loadURL(_NUXT_URL_) } else { setTimeout(pollServer, 300) }
 			}).on('error', pollServer)
 		}
 		pollServer()
-	} else { win.loadURL(_NUXT_URL_) }
+	} else { return win.loadURL(_NUXT_URL_) }
 }
 app.on('ready', newWin)
 app.on('window-all-closed', () => app.quit())
