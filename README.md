@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/HoraceKeung/nuxtron/master/template/static/icon.png">
+</p>
+
 # Nuxtron
 
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) Electron starter project template.
