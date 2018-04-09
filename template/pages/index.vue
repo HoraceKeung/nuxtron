@@ -1,7 +1,7 @@
 <template>
 	<section class="container">
 		<div>
-			<img width="256" src="~/assets/icons/icon.png">
+			<img width="256" src="icon.png">
 			<h1>nuxtron-test</h1>
 			<h2>Nuxt + Electron</h2>
 			<a href="https://nuxtjs.org/" target="_blank" class="btn btn-primary">Documentation</a>
