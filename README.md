@@ -1,3 +1,5 @@
+# This is merged into [nuxt-community/electron-template](https://github.com/nuxt-community/electron-template), please use that instead.
+
 <p align="center">
     <img width="128" src="https://raw.githubusercontent.com/HoraceKeung/nuxtron/master/template/static/icon.png">
 </p>
